@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic Hub</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ff5722;
+        }
+
+        main {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto; /* Center align on larger screens */
+        }
+
+        .infographic {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 350px;
+            width: 100%;
+        }
+
+        .infographic img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table th, .info-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        .info-table th {
+            color: #ff5722;
+            font-size: 12px;
+        }
+
+        .info-table td {
+            font-size: 11px;
+        }
+
+        .description {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            main {
+                grid-template-columns: 1fr; /* Display one column on small screens */
+            }
+            .infographic {
+                max-width: 100%; /* Full width on small screens */
+            }
+            .info-table th, .info-table td {
+                font-size: 10px;
+            }
+            .description {
+                font-size: 12px;
+            }
+            footer p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Infographic Hub</h1>
+        <div class="description">
+            <p>To publish your infographic <a href="https://www.google.com" target="_blank">click here</a>.</p>
+        </div>
+    </header>
+    <main>
+        <section class="infographic">
+            <img src="https://i.ibb.co/xHnv932/Blue-Entrepreneur-Personalities-Business-Infographic.png" alt="Infographic 1">
+            <div class="info">
+                <table class="info-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Example Business</td>
+                    </tr>
+                    <tr>
+                        <th>Website</th>
+                        <td><a href="https://example.com">example.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>info@example.com</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>1234 Example St, City, Country</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="infographic">
+            <img src="https://i.ibb.co/3Ycwg2w/Yellow-and-Black-Illustration-Digital-Marketing-Infographic-2.png" alt="Infographic 2">
+            <div class="info">
+                <table class="info-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Another Business</td>
+                    </tr>
+                    <tr>
+                        <th>Website</th>
+                        <td><a href="https://example.com">example.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>contact@example.com</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>5678 Business Ave, City, Country</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="infographic">
+            <img src="https://i.ibb.co/xHnv932/Blue-Entrepreneur-Personalities-Business-Infographic.png" alt="Infographic 3">
+            <div class="info">
+                <table class="info-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Third Business</td>
+                    </tr>
+                    <tr>
+                        <th>Website</th>
+                        <td><a href="https://example.com">example.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>info@thirdbusiness.com</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>999 Digital Way, City, Country</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Infographic Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
