@@ -17,6 +17,7 @@
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
+			
         }
 
         header h1 {
@@ -25,13 +26,27 @@
             color: #ff5722;
         }
 
+        header .description {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        header .description a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        header .description a:hover {
+            text-decoration: underline;
+        }
+
         main {
             padding: 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 20px;
             max-width: 1100px;
-            margin: 0 auto; /* Center align on larger screens */
+            margin: 0 auto;
         }
 
         .infographic {
@@ -39,8 +54,6 @@
             border: 1px solid #333;
             border-radius: 8px;
             overflow: hidden;
-            max-width: 350px;
-            width: 100%;
         }
 
         .infographic img {
@@ -73,25 +86,11 @@
             font-size: 11px;
         }
 
-        .description {
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        a {
-            color: #ff5722;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
         footer {
             background-color: #1e1e1e;
             text-align: center;
             padding: 10px 0;
+            font-size: 0.9em;
         }
 
         /* Responsive Styles */
@@ -99,20 +98,39 @@
             header h1 {
                 font-size: 1.5em;
             }
+
+            header .description {
+                font-size: 0.9em;
+            }
+
             main {
-                grid-template-columns: 1fr; /* Display one column on small screens */
+                grid-template-columns: 1fr;
             }
-            .infographic {
-                max-width: 100%; /* Full width on small screens */
-            }
+
             .info-table th, .info-table td {
                 font-size: 10px;
             }
-            .description {
-                font-size: 12px;
+
+            footer {
+                font-size: 0.8em;
             }
-            footer p {
-                font-size: 10px;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            header .description {
+                font-size: 0.8em;
+            }
+
+            .info-table th, .info-table td {
+                font-size: 9px;
+            }
+
+            footer {
+                font-size: 0.7em;
             }
         }
     </style>
@@ -148,98 +166,7 @@
                 </table>
             </div>
         </section>
-         <section class="infographic">
-            <img src="https://i.ibb.co/xHnv932/Blue-Entrepreneur-Personalities-Business-Infographic.png" alt="Infographic 1">
-            <div class="info">
-                <table class="info-table">
-                    <tr>
-                        <th>Name</th>
-                        <td>Example Business</td>
-                    </tr>
-                    <tr>
-                        <th>Website</th>
-                        <td><a href="https://example.com">example.com</a></td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>info@example.com</td>
-                    </tr>
-                    <tr>
-                        <th>Address</th>
-                        <td>1234 Example St, City, Country</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-         <section class="infographic">
-            <img src="https://i.ibb.co/xHnv932/Blue-Entrepreneur-Personalities-Business-Infographic.png" alt="Infographic 1">
-            <div class="info">
-                <table class="info-table">
-                    <tr>
-                        <th>Name</th>
-                        <td>Example Business</td>
-                    </tr>
-                    <tr>
-                        <th>Website</th>
-                        <td><a href="https://example.com">example.com</a></td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>info@example.com</td>
-                    </tr>
-                    <tr>
-                        <th>Address</th>
-                        <td>1234 Example St, City, Country</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-         <section class="infographic">
-            <img src="https://i.ibb.co/xHnv932/Blue-Entrepreneur-Personalities-Business-Infographic.png" alt="Infographic 1">
-            <div class="info">
-                <table class="info-table">
-                    <tr>
-                        <th>Name</th>
-                        <td>Example Business</td>
-                    </tr>
-                    <tr>
-                        <th>Website</th>
-                        <td><a href="https://example.com">example.com</a></td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>info@example.com</td>
-                    </tr>
-                    <tr>
-                        <th>Address</th>
-                        <td>1234 Example St, City, Country</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-         <section class="infographic">
-            <img src="https://i.ibb.co/xHnv932/Blue-Entrepreneur-Personalities-Business-Infographic.png" alt="Infographic 1">
-            <div class="info">
-                <table class="info-table">
-                    <tr>
-                        <th>Name</th>
-                        <td>Example Business</td>
-                    </tr>
-                    <tr>
-                        <th>Website</th>
-                        <td><a href="https://example.com">example.com</a></td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>info@example.com</td>
-                    </tr>
-                    <tr>
-                        <th>Address</th>
-                        <td>1234 Example St, City, Country</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+        <!-- Additional infographic sections here -->
         <section class="infographic">
             <img src="https://i.ibb.co/3Ycwg2w/Yellow-and-Black-Illustration-Digital-Marketing-Infographic-2.png" alt="Infographic 2">
             <div class="info">
@@ -292,3 +219,4 @@
     </footer>
 </body>
 </html>
+
